@@ -3,7 +3,7 @@ package br.com.tiqe.bean;
 //import javax.faces.bean.ManagedBean;
 import javax.annotation.ManagedBean;
 
-import br.com.tiqe.modelo.User;
+import br.com.tiqe.model.User;
 
 @ManagedBean
 public class UserBean {
@@ -21,7 +21,7 @@ public class UserBean {
 			throw new RuntimeException("Usuario deve ter um nome");
 		}
 		
-		new DAO<User>(User.class).insert(this.user);
+		//new DAO<User>(User.class).insert(this.user);
 		
 	}
 }
